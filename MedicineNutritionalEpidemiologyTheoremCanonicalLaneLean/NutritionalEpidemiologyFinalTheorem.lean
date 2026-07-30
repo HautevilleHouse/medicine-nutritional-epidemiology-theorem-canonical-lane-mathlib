@@ -1,0 +1,16 @@
+import canonicalLaneMathlib.AdmissibleClass
+import HautevilleHouse.MedicineNutritionalEpidemiologyTheoremCanonicalLaneLean.DoseResponseModel
+import HautevilleHouse.MedicineNutritionalEpidemiologyTheoremCanonicalLaneLean.ConfoundingControl
+import HautevilleHouse.MedicineNutritionalEpidemiologyTheoremCanonicalLaneLean.SurvivalAnalysis
+
+namespace HautevilleHouse
+namespace MedicineNutritionalEpidemiologyTheoremCanonicalLaneLean
+
+def ConstrainedNutritionalEpidemiologyClosure (A : AdmissibleClass) : Prop :=
+  bridgeClosed A ∧ gateClosed A
+
+theorem constrained_nutritional_epidemiology_endgame (A : AdmissibleClass) : ConstrainedNutritionalEpidemiologyClosure A := by
+  exact And.intro (bridge_from_admissible_class A) (gate_from_admissible_class A)
+
+end MedicineNutritionalEpidemiologyTheoremCanonicalLaneLean
+end HautevilleHouse
